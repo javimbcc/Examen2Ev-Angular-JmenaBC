@@ -26,7 +26,7 @@ export class AddPorterosComponent {
     disponibilidad: [''],
     pais: ['']
   });
-
+  //Esto de aqui lo hacemos para poder coger el document id
   documentId: string = '';
   portero: any;
 

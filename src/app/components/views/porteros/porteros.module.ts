@@ -15,6 +15,7 @@ Este sera el modulo que manejara nuestros porteros
     PorterosFormComponent,
     PorterosListComponent,
     AddPorterosComponent,
+
   ],
   imports: [
     CommonModule,
