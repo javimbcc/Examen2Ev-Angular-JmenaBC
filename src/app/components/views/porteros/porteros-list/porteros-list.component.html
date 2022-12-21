@@ -1,0 +1,24 @@
+<div class="m-2 p-2">
+  <h1>Lista de Porteros</h1>
+  <a routerLink="añadir">Registrar porteros</a>
+</div>
+<div class="m-2 p-2 d-flex">
+
+   <!-- <ul *ngIf="porterosLista">
+    <li *ngFor="let p of porterosLista" routerLink="editar/{{ p.documentId }}">
+      {{ p.data.nombre }}
+    </li>
+  </ul> -->
+
+  <div class="card" style="width: 18rem;" *ngFor="let p of porterosLista" ngClass="m-2">
+    <div class="card-body" >
+      <h5 class="card-title">{{p.data.nombre}} {{p.data.apellidos}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Ciudad: {{p.data.ciudad}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Email: {{p.data.email}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Telefono: {{p.data.telefono}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Disponibilidad: {{p.data.disponibilidad}}</h6>
+      <a routerLink="editar/{{ p.documentId }}">Editar y eliminar</a>
+    </div>
+  </div>
+
+</div>
