@@ -24,6 +24,7 @@ export class AddPorterosComponent {
     email: [''],
     telefono: [''],
     disponibilidad: [''],
+    pais: ['']
   });
 
   documentId: string = '';

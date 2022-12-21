@@ -1,29 +1,33 @@
 <form [formGroup]="formPorteros" (submit)="EditarDatos()" class="m-2 text-center justify-content-center p-2">
   <div>
     <input type="text" formControlName="nombre" id="nombre" class="formControl">
-    <label for="titulo">Nombre</label>
+    <label for="nombre">Nombre</label>
   </div>
   <div>
     <input type="text" formControlName="apellidos" id="apellidos" class="formControl">
-    <label for="director">Apellidos</label>
+    <label for="apellidos">Apellidos</label>
   </div>
   <div><input type="text" formControlName="ciudad" id="ciudad" class="formControl">
-    <label for="genero">Ciudad</label>
+    <label for="ciudad">Ciudad</label>
   </div>
   <div>
     <input type="text" formControlName="email" id="email" class="formControl">
-    <label for="duracion">Email</label>
+    <label for="email">Email</label>
   </div>
   <div>
     <input type="text" formControlName="telefono" id="telefono" class="formControl">
-    <label for="year">Telefono</label>
+    <label for="telefono">Telefono</label>
   </div>
   <div>
-    <input type="text" formControlName="disponibilidad" id="publico" class="formControl">
-    <label for="year">Disponibilidad</label>
+    <input type="text" formControlName="disponibilidad" id="disponibilidad" class="formControl">
+    <label for="disponibilidad">Disponibilidad</label>
   </div>
-  <button class="btn btn-dark" type="submit">Registrar cambios</button>
-  <button class="btn btn-dark" (click)="darDebaja()">Eliminar usuario</button>
+  <div>
+    <input type="text" formControlName="pais" id="pais" class="formControl">
+    <label for="pais">Pais</label>
+  </div>
+  <button class="btn btn-dark m-2" (click)="ActualizarDatos()">Registrar cambios</button>
+  <button class="btn btn-dark m-2" (click)="darDebaja()">Eliminar usuario</button>
 
 
 

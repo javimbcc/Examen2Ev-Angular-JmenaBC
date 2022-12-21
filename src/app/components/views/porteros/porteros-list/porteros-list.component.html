@@ -1,6 +1,6 @@
 <div class="m-2 p-2">
-  <h1>Lista de Porteros</h1>
-  <a routerLink="añadir">Registrar porteros</a>
+  <h1 class="m-2">Lista de Porteros</h1>
+  <a routerLink="añadir" class="m-2 p-2 bg-dark text-light rounded text-decoration-none">Registrar porteros</a>
 </div>
 <div class="m-2 p-2 d-flex">
 
@@ -14,9 +14,11 @@
     <div class="card-body" >
       <h5 class="card-title">{{p.data.nombre}} {{p.data.apellidos}}</h5>
       <h6 class="card-subtitle mb-2 text-muted">Ciudad: {{p.data.ciudad}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Disponibilidad: {{p.data.pais}}</h6>
       <h6 class="card-subtitle mb-2 text-muted">Email: {{p.data.email}}</h6>
       <h6 class="card-subtitle mb-2 text-muted">Telefono: {{p.data.telefono}}</h6>
       <h6 class="card-subtitle mb-2 text-muted">Disponibilidad: {{p.data.disponibilidad}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">Pais: {{p.data.pais}}</h6>
       <a routerLink="editar/{{ p.documentId }}">Editar y eliminar</a>
     </div>
   </div>

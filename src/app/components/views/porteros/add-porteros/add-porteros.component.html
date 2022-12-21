@@ -1,26 +1,30 @@
-<form [formGroup]="formPorteros" (submit)="crearPortero()">
+<form [formGroup]="formPorteros" (submit)="crearPortero()" class="m-2 text-center justify-content-center p-2">
   <div>
-    <input type="text" formControlName="nombre" id="nombre" class="formControl">
+    <input type="text" formControlName="nombre" id="publico" class="formControl">
     <label for="titulo">Nombre</label>
   </div>
   <div>
-    <input type="text" formControlName="apellidos" id="apellidos" class="formControl">
+    <input type="text" formControlName="apellidos" id="publico" class="formControl">
     <label for="director">Apellidos</label>
   </div>
-  <div><input type="text" formControlName="ciudad" id="ciudad" class="formControl">
+  <div><input type="text" formControlName="ciudad" id="publico" class="formControl">
     <label for="genero">Ciudad</label>
   </div>
   <div>
-    <input type="text" formControlName="email" id="email" class="formControl">
+    <input type="text" formControlName="email" id="publico" class="formControl">
     <label for="duracion">Email</label>
   </div>
   <div>
-    <input type="text" formControlName="telefono" id="telefono" class="formControl">
+    <input type="text" formControlName="telefono" id="publico" class="formControl">
     <label for="year">Telefono</label>
   </div>
   <div>
     <input type="text" formControlName="disponibilidad" id="publico" class="formControl">
     <label for="year">Disponibilidad</label>
+  </div>
+  <div>
+    <input type="text" formControlName="pais" id="publico" class="formControl">
+    <label for="year">Pais</label>
   </div>
 
   <button class="btn btn-dark" type="submit">Registrar Portero</button>
